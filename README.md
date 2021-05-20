@@ -1,4 +1,40 @@
-# Getting Started with Create React App
+# Working with Firebase
+
+You can see the working website here: 
+[https://chatty-d881e.web.app/](https://chatty-d881e.web.app/)
+
+Here's the (somewhat lacking...) tutorial:
+[https://css-tricks.com/building-a-real-time-chat-app-with-react-and-firebase/](https://css-tricks.com/building-a-real-time-chat-app-with-react-and-firebase/)
+
+And here's the original repo that I just downloaded and didn't fork:
+[https://github.com/ReactTraining/react-router](https://github.com/ReactTraining/react-router)
+
+## Access to Firebase Project
+After you get access to the project in the firebase console, in the root directory of your local repo, you'll need to run:
+
+### `npm install -g firebase-tools`
+### `firebase init` 
+
+Pick the appropriate project. We're using database, hosting, and auth if it matters. Make sure the BUILD folder is the published one -- not PUBLIC.
+
+You may need to do some kind of firebase login thing -- not sure.
+
+And I just learned through writing this that you can run THIS , although the yarn start works the same way:
+### `npm run build-firebase`
+### `firebase serve`
+
+In addition to the yarn things below, when you're ready to push the changes to firebase, you can run this command in the root project directory:
+
+### `firebase deploy`
+
+...and if you're making aesthetic changes and don't want it to take forever, you can run:
+
+### `firebase deploy --only hosting`
+
+But before you do that, you'll need access to the firebase project. Feel free to set up a totally different non-firebase backend! But if firebase is your game, you'll want to 
+
+
+# Getting Started with Create React App (came with the tutorial repo)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
